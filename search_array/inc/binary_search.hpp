@@ -4,5 +4,5 @@
 
 class Solution {
 public:
-    int search(std::vector<int>& nums, int target);
+    int binary_search(std::vector<int>& nums, int target);
 };
