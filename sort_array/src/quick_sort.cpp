@@ -27,3 +27,12 @@ std::vector<int> Solution::sortArray(std::vector<int>& nums) {
     quickSort(nums, 0, nums.size() - 1);
     return nums;
 }
+
+/*
+ * Big O (n la so phan tu):
+ * - Time: Best/Average O(n log n), Worst O(n^2).
+ *   Moi lan partition duyet doan hien tai mot lan. Pivot chia mang can bang tao log n tang;
+ *   pivot luon nho nhat hoac lon nhat tao n tang, nhu khi mang da co thu tu voi pivot o cuoi.
+ * - Space: Best/Average O(log n), Worst O(n).
+ *   Mang duoc sap xep tai cho, nhung stack de quy co do sau bang so tang chia mang.
+ */

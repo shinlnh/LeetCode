@@ -37,3 +37,11 @@ std::vector<int> Solution::sortArray(std::vector<int>& nums) {
     sort(nums);
     return nums;
 }
+
+/*
+ * Big O (n la so phan tu):
+ * - Time: Best/Average/Worst O(n log n).
+ *   Tao max-heap mat O(n); sau do co n lan dua phan tu lon nhat ve cuoi va heapify mat toi da O(log n).
+ * - Space: O(log n).
+ *   Mang duoc sap xep tai cho, nhung heapify de quy can stack toi da bang chieu cao cua heap.
+ */
