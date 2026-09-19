@@ -48,3 +48,11 @@ std::vector<int> Solution::sortArray(std::vector<int>& nums) {
 
     return nums;
 }
+
+/*
+ * Big O (n la so phan tu):
+ * - Time: Best/Average/Worst O(n log n).
+ *   Mang duoc chia doi qua log n tang de quy; tai moi tang, thao tac merge xu ly tong cong n phan tu.
+ * - Space: O(n).
+ *   Hai vector tam L va R chua tong cong toi da n phan tu; stack de quy O(log n) nho hon O(n).
+ */

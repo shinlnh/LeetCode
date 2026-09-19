@@ -14,3 +14,12 @@ std::vector<int> Solution::sortArray(std::vector<int>& nums) {
     }
     return nums;
 }
+
+/*
+ * Big O (n la so phan tu):
+ * - Time: Best/Average/Worst O(n^2).
+ *   Moi vi tri deu phai duyet phan chua sap xep de tim gia tri nho nhat, tong cong
+ *   n(n - 1) / 2 lan so sanh, bat ke thu tu ban dau cua mang.
+ * - Space: O(1).
+ *   Thuat toan sap xep tai cho va chi dung cac bien chi so cung mot bien vi tri nho nhat.
+ */
