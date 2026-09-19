@@ -14,3 +14,12 @@ std::vector<int> Solution::sortArray(std::vector<int>& nums) {
     }
     return nums;
 }
+
+/*
+ * Big O (n la so phan tu):
+ * - Time: Best O(n), Average/Worst O(n^2).
+ *   Mang da tang dan chi can mot lan kiem tra cho moi phan tu; trong truong hop trung binh
+ *   hoac dao nguoc, moi phan tu co the phai dich qua mot phan lon mang da sap xep.
+ * - Space: O(1).
+ *   Cac phan tu duoc dich ngay trong nums va chi can bien key cung cac bien chi so.
+ */
