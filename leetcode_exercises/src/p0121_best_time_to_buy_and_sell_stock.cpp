@@ -3,22 +3,21 @@
 #include <algorithm>
 
 int Solution::maxProfit(std::vector<int>& prices) {
-    if (prices.empty()) {
-        return 0;
-    }
-
-    int min_price = prices[0];
+    const int size = static_cast<int>(prices.size());
     int max_profit = 0;
 
-    for (const int price : prices) {
-        min_price = std::min(min_price, price);
-        max_profit = std::max(max_profit, price - min_price);
+    for (int i = 0; i < size - 1; i++) {
+        for (int j = i + 1; j < size; j++) {
+            const int profit = prices[j] - prices[i];
+            max_profit = std::max(max_profit, profit);
+        }
     }
+
     return max_profit;
 }
 
 /*
  * Big O (n la so ngay):
- * - Time: O(n).
+ * - Time: O(n^2).
  * - Space: O(1).
  */
